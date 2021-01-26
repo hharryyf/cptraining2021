@@ -14,3 +14,8 @@ cnt[i] as the total contribution of a[i] appears at the jth position. This is ag
 https://codeforces.com/contest/1467/problem/D
 
 
+3. K and Medians (diff=2200, constructive algorithm, ad-hoc)
+The problem is quite simple. Note that the answer is yes 
+iff there are even number of chunks of size (k-1) / 2 and there is at least 1 remaining elements between the 
+last element of the first chunk and the first element of the last chunk. https://codeforces.com/problemset/problem/1468/H
+
