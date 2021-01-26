@@ -6,4 +6,11 @@ Practice for 2021 SPPC, the aim for this training is to revenge for the unfortun
 This is the standard application of FFT, generating all possible sum of a[i] + b[j].
 https://codeforces.com/problemset/problem/632/E
 
+2. Sum of Paths (diff=2200, dp, combinatorics)
+This is a very technical problem. Define dp[i][j] as the number of paths that ends/starts at i after j steps.
+Then, we claim the contribution of element i is cnt[i] = sum(dp[i][j] * dp[i][K-j], j = 0..K). The second formula
+is quite hard to understand. The main reason for it to work is instead of counting cnt[i] directly we can think
+cnt[i] as the total contribution of a[i] appears at the jth position. This is again the common combinatorics trick: "calculate twice".
+https://codeforces.com/contest/1467/problem/D
+
 
