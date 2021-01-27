@@ -40,4 +40,9 @@ cnt is the occurence of i in the array. But how can we multiply things together?
 We can maintain the size of the polynomials and always multiply the two shortest polynomials together.
 https://codeforces.com/contest/958/problem/F3
 
+7. Strange Housing (diff=2200, constructive algorithm, ad-hoc)
+The problem is not hard. It can be seen easily the only break condition is the graph is not connected. Then, we get an uncolored vertex
+and color it 1 and then set all of its neighbour to be 0, then pick a vertex that is connected to a "0" vertex and repeat the above 
+procedure until no vertex can be colored. https://codeforces.com/contest/1471/problem/F
+
 
