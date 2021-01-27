@@ -33,3 +33,11 @@ The observation is there are only 9e5 many possible sums for the first half. If 
 easy of these sum, the answer is trivial. How to compute this? It is exactly the same as CF632E but since mod is required we
 use NTT instead of FFT. https://codeforces.com/problemset/problem/1096/G
 
+
+6. Lightsabers (hard) (diff=2600, FFT, greedy)
+It is not hard to see the answer is the coefficient of the degree K term of the polynomial which p[i] = 1 + x + ... + x^cnt which
+cnt is the occurence of i in the array. But how can we multiply things together? Remember the standard greedy problem, stone merging?
+We can maintain the size of the polynomials and always multiply the two shortest polynomials together.
+https://codeforces.com/contest/958/problem/F3
+
+
