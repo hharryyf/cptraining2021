@@ -27,3 +27,9 @@ standard LIS transition, type 2 is the transition from dp[j] + 2 which a[j] <= a
 k is between j and i and a[k] >= a[j]. Type 2 transition can be done with sweeping.
 https://codeforces.com/contest/1468/problem/A
 
+
+5. Lucky Tickets (diff=2400, NTT)
+The observation is there are only 9e5 many possible sums for the first half. If we can calculate how many ways to construct
+easy of these sum, the answer is trivial. How to compute this? It is exactly the same as CF632E but since mod is required we
+use NTT instead of FFT. https://codeforces.com/problemset/problem/1096/G
+
