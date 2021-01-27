@@ -23,6 +23,27 @@ ll fastpower(ll v, ll p) {
     return ret;
 }
 
+int generator (int p) {
+    vector<int> fact;
+    int phi = p-1,  n = phi;
+    for (int i=2; i*i<=n; ++i)
+        if (n % i == 0) {
+            fact.push_back (i);
+            while (n % i == 0)
+                n /= i;
+        }
+    if (n > 1)
+        fact.push_back (n);
+
+    for (int res=2; res<=p; ++res) {
+        bool ok = true;
+        for (size_t i=0; i<fact.size() && ok; ++i)
+            ok &= fastpower (res, phi / fact[i]) != 1;
+        if (ok)  return res;
+    }
+    return -1;
+}
+
 struct NTT {
     void ntt(vector<int>& P , int op){
         int len = P.size() , i , j , k;
