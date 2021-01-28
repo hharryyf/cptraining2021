@@ -45,4 +45,9 @@ The problem is not hard. It can be seen easily the only break condition is the g
 and color it 1 and then set all of its neighbour to be 0, then pick a vertex that is connected to a "0" vertex and repeat the above 
 procedure until no vertex can be colored. https://codeforces.com/contest/1471/problem/F
 
+8. Cleaning (diff=2200, ad-hoc, line sweep)
+The problem is quite stright forward. If we look at the piles from left to write we can easily write out an alternative sign equation.
+https://codeforces.com/problemset/problem/1474/D
+
+
 
