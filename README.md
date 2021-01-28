@@ -50,4 +50,7 @@ The problem is quite stright forward. If we look at the piles from left to right
 https://codeforces.com/problemset/problem/1474/D
 
 
+9. Barrels and boxes (diff=2300, combinatorics, stars and bars)
+Quite standard starts and bars combinatorics https://codeforces.com/problemset/problem/768/F
+
 
