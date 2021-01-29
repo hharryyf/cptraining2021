@@ -54,3 +54,9 @@ https://codeforces.com/problemset/problem/1474/D
 Quite standard starts and bars combinatorics https://codeforces.com/problemset/problem/768/F
 
 
+10. Similar Sets (diff=2300, ad-hoc, sqrt decomposition)
+This is a very technical problem. First step, divide the sets into small and large the boundary is sqrt(M), here M is the sum of ki.
+Then, for larger sets we just see directly if it is similar to another set. For small sets, we can put all the combination of numbers
+into array of vectors and use the same trick as the larger set part to solve it. https://codeforces.com/problemset/problem/1468/M
+
+
