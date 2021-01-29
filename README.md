@@ -60,3 +60,8 @@ Then, for larger sets we just see directly if it is similar to another set. For 
 into array of vectors and use the same trick as the larger set part to solve it. https://codeforces.com/problemset/problem/1468/M
 
 
+11. The Great Mixing (diff=2300, ad-hoc, BFS) 
+This is a very techinical problem. Note that solving equation (n-a[1]) + (n-a[2]) + ... + (n-a[p]) = 0 can be done
+with BFS cycle detection!! After that, we must realize that the order a[1]..a[p] is not matter, which means only concentration -1000 to 1000 is necessary. https://codeforces.com/problemset/problem/788/C
+
+
