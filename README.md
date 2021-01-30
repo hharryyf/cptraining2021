@@ -65,3 +65,8 @@ This is a very techinical problem. Note that solving equation (n-a[1]) + (n-a[2]
 with BFS cycle detection!! After that, we must realize that the order a[1]..a[p] is not matter, which means only concentration -1000 to 1000 is necessary. https://codeforces.com/problemset/problem/788/C
 
 
+12. Nezzar and Board (diff=1800, ad-hoc, constructive algorithm)
+The problem is quite easy but interesting. Consider given 2 numbers x and y then the resulting sequence formed by all numbers that
+has difference k times (y - x) with x. Then, if we generalize this to N numbers if would be a sequence has difference of gcd(a[i] - a[i-1]) from a[0]. https://codeforces.com/problemset/problem/1477/A
+
+
