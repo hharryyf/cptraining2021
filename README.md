@@ -70,3 +70,7 @@ The problem is quite easy but interesting. Consider given 2 numbers x and y then
 has difference k times (y - x) with x. Then, if we generalize this to N numbers if would be a sequence has difference of gcd(a[i] - a[i-1]) from a[0]. https://codeforces.com/problemset/problem/1477/A
 
 
+13. Nezzar and Binary String (diff=1900, ad-hoc, range tree)
+This problem is simple, just reverse the order of the queries and we are done. https://codeforces.com/problemset/problem/1477/B
+
+
