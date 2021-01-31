@@ -74,3 +74,7 @@ has difference k times (y - x) with x. Then, if we generalize this to N numbers 
 This problem is simple, just reverse the order of the queries and we are done. https://codeforces.com/problemset/problem/1477/B
 
 
+14. Nezzar and Nice Beatmap (diff=2200, geometry, constructive algorithm)
+Trick: always walk to the furthest point. https://codeforces.com/problemset/problem/1477/C
+
+
