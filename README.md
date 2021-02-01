@@ -78,3 +78,16 @@ This problem is simple, just reverse the order of the queries and we are done. h
 Trick: always walk to the furthest point. https://codeforces.com/problemset/problem/1477/C
 
 
+15. Unusual Matrix (diff=1900, Ad-hoc, 2-cnf)
+Think the problem as a 2CNF and we are done. https://codeforces.com/contest/1475/problem/F
+
+16. Mahmoud and Ehab and another array construction task (diff=1900, math)
+The idea is we are actually interested in the MEX. 
+https://codeforces.com/problemset/problem/959/D
+
+
+17. Number of Simple Paths (diff=2000, tree dp, observation)
+Just observe that if we extract the cycle first, only pair of points that are in different "rooted cycle tree" would contribute
+to the answer twice. https://codeforces.com/problemset/problem/1454/E
+
+
