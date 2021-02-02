@@ -100,3 +100,7 @@ This problem is quite simple, only requires some high school geometry stuff. The
 https://codeforces.com/contest/1468/problem/G
 
 
+20. Pashmak and Buses (diff=1900, constructive algorithm, math)
+Just use k-based representation of 1 to n, d^k is less than n then no solution. https://codeforces.com/problemset/problem/459/C
+
+
