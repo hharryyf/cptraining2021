@@ -90,4 +90,13 @@ https://codeforces.com/problemset/problem/959/D
 Just observe that if we extract the cycle first, only pair of points that are in different "rooted cycle tree" would contribute
 to the answer twice. https://codeforces.com/problemset/problem/1454/E
 
+18. Memory and Scores (diff=2200, knapsack dp)
+Key observation: take the difference between dp[t-1][diff] and dp[t-1][diff-1] and you'll see something.
+https://codeforces.com/problemset/problem/712/D
+
+
+19. Hobbits (diff=2500, geometry, cross product)
+This problem is quite simple, only requires some high school geometry stuff. The only place to be careful is precision control,
+https://codeforces.com/contest/1468/problem/G
+
 
