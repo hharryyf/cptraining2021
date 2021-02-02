@@ -104,3 +104,12 @@ https://codeforces.com/contest/1468/problem/G
 Just use k-based representation of 1 to n, d^k is less than n then no solution. https://codeforces.com/problemset/problem/459/C
 
 
+21. Divide and Sum (diff=1900, math, combinatorics, proof by contradiction)
+It can be proved by constradiction that all partitions have the same cost. 
+https://codeforces.com/problemset/problem/1444/B
+
+
+22. AB-string (diff=1900, combinatorics)
+Just remember the string only contains 2 types of characters, if you try to solve a general problem 'A' - 'Z' then you are dead.
+https://codeforces.com/contest/1238/problem/D
+
