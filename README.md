@@ -113,3 +113,8 @@ https://codeforces.com/problemset/problem/1444/B
 Just remember the string only contains 2 types of characters, if you try to solve a general problem 'A' - 'Z' then you are dead.
 https://codeforces.com/contest/1238/problem/D
 
+
+23. SPPC 2020 problem B (dp, line sweep, range tree)
+This problem is exactly the same as NWERC 2019 problem H, just write out the equation of dp and use the same trick to maintain it.
+I'm completely confused on why we haven't solve that in contest. 
+
