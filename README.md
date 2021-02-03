@@ -118,3 +118,12 @@ https://codeforces.com/contest/1238/problem/D
 This problem is exactly the same as NWERC 2019 problem H, just write out the equation of dp and use the same trick to maintain it.
 I'm completely confused on why we haven't solve that in contest. 
 
+
+24. Classy Numbers (diff=1900, generating combinations, binary search)
+If can be observed that the total valid number less than 1e18 + 1 is only around 6e5, we can generate all of them and use
+binary search for each query. https://codeforces.com/problemset/problem/1036/C
+
+
+25. Print a 1337-string... (diff=1900, Ad-hoc, constructive algorithm)
+The idea is quite easy, just always find the larget T such that C(T, 2) <= N. https://codeforces.com/contest/1202/problem/D
+
