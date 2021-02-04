@@ -127,3 +127,8 @@ binary search for each query. https://codeforces.com/problemset/problem/1036/C
 25. Print a 1337-string... (diff=1900, Ad-hoc, constructive algorithm)
 The idea is quite easy, just always find the larget T such that C(T, 2) <= N. https://codeforces.com/contest/1202/problem/D
 
+
+26. 505 (diff=2000, Ad-hoc, dp on broken profile)
+It can be observed easily that when min(N, M) > 3 there's no solution and for other cases we can use dp on broken profile.
+https://codeforces.com/problemset/problem/1391/D
+
