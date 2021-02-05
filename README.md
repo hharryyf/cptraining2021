@@ -136,3 +136,7 @@ https://codeforces.com/problemset/problem/1391/D
 27. Pathwalks (diff=2100, dp, dynamic range tree)
 Quite simple, just LIS on graph. https://codeforces.com/problemset/problem/960/F
 
+
+28. Make Them Equal (diff=2000, ad-hoc, constructive algorithm)
+Think what initially positive element means. https://codeforces.com/contest/1416/problem/B
+
