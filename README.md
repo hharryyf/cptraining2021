@@ -132,3 +132,7 @@ The idea is quite easy, just always find the larget T such that C(T, 2) <= N. ht
 It can be observed easily that when min(N, M) > 3 there's no solution and for other cases we can use dp on broken profile.
 https://codeforces.com/problemset/problem/1391/D
 
+
+27. Pathwalks (diff=2100, dp, dynamic range tree)
+Quite simple, just LIS on graph. https://codeforces.com/problemset/problem/960/F
+
