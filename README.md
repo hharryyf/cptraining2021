@@ -140,3 +140,7 @@ Quite simple, just LIS on graph. https://codeforces.com/problemset/problem/960/F
 28. Make Them Equal (diff=2000, ad-hoc, constructive algorithm)
 Think what initially positive element means. https://codeforces.com/contest/1416/problem/B
 
+
+29. Maximum Value (diff=2100, partial sum, sparse table)
+The idea is we can make good use of the partial sum n / 1 + n / 2 + ... + n / n = O(nlogn).
+https://codeforces.com/problemset/problem/484/B
