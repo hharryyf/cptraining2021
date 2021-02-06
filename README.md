@@ -150,3 +150,9 @@ https://codeforces.com/problemset/problem/484/B
 It is a good problem to test the gaussian elimination template. 
 https://codeforces.com/contest/1155/problem/E
 
+
+31. Grime Zoo (diff=2100, ad-hoc)
+I guessed the ? are replaced with 111...000 or 000...111 and magically it is correct. Actually, using proof
+by contradiction can proof this easiliy. And the rest is a standard sweeping and data structure problem.
+https://codeforces.com/contest/1411/problem/D
+
