@@ -156,3 +156,11 @@ I guessed the ? are replaced with 111...000 or 000...111 and magically it is cor
 by contradiction can proof this easiliy. And the rest is a standard sweeping and data structure problem.
 https://codeforces.com/contest/1411/problem/D
 
+
+32. Longest Subsequence (diff=2100, math)
+Exactly the same trick as CF1154g. https://codeforces.com/contest/632/problem/D
+
+
+33. Vasya and Beautiful Arrays (diff=2100, math, sparse table)
+Exactly the same trick as CF484B. https://codeforces.com/problemset/problem/354/C
+
