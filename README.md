@@ -164,3 +164,7 @@ Exactly the same trick as CF1154g. https://codeforces.com/contest/632/problem/D
 33. Vasya and Beautiful Arrays (diff=2100, math, sparse table)
 Exactly the same trick as CF484B. https://codeforces.com/problemset/problem/354/C
 
+
+34. Replace by MEX (diff=1900, constructive algorithm, ad-hoc)
+Make the final array to [0,1,2...n-1]. https://codeforces.com/contest/1375/problem/D
+
