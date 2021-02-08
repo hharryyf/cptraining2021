@@ -1,7 +1,7 @@
 # cptraining2021
 Practice for 2021 SPPC, the aim for this training is to revenge for the unfortunate defeat to TLE 2020 in SPPC 2020
 
-* Phase 1: FFT, Combinatorics and Geometry 
+* Phase 1: FFT, Combinatorics and ad-hoc 
 1. Thief in a Shop (diff=2400, FFT, exponential by squaring)
 This is the standard application of FFT, generating all possible sum of a[i] + b[j].
 https://codeforces.com/problemset/problem/632/E
@@ -167,4 +167,14 @@ Exactly the same trick as CF484B. https://codeforces.com/problemset/problem/354/
 
 34. Replace by MEX (diff=1900, constructive algorithm, ad-hoc)
 Make the final array to [0,1,2...n-1]. https://codeforces.com/contest/1375/problem/D
+
+
+35. Maximum Subsequence Value (diff=1900, constructive algorithm, ad-hoc)
+The idea is think what k - 2 means, how many element should the final array consists. 
+https://codeforces.com/problemset/problem/1365/E
+
+
+36. Population Size (diff=2400, greedy, ad-hoc)
+It can be proved easily that always go for the rightmost valid position is optimal. The rest would be case work.
+https://codeforces.com/contest/416/problem/D
 
