@@ -178,3 +178,7 @@ https://codeforces.com/problemset/problem/1365/E
 It can be proved easily that always go for the rightmost valid position is optimal. The rest would be case work.
 https://codeforces.com/contest/416/problem/D
 
+
+37. Chris and Road (diff=2100, geometry)
+Need to be aware of precision. https://codeforces.com/contest/703/problem/C
+
