@@ -182,3 +182,8 @@ https://codeforces.com/contest/416/problem/D
 37. Chris and Road (diff=2100, geometry)
 Need to be aware of precision. https://codeforces.com/contest/703/problem/C
 
+
+38. Kuroni and the Celebration (diff=1900, Ad-hoc)
+Always get 2 degree 1 node and query. Eliminate all nodes on the path except the LCA.
+https://codeforces.com/problemset/problem/1305/D
+
