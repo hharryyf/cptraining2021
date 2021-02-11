@@ -187,3 +187,12 @@ Need to be aware of precision. https://codeforces.com/contest/703/problem/C
 Always get 2 degree 1 node and query. Eliminate all nodes on the path except the LCA.
 https://codeforces.com/problemset/problem/1305/D
 
+
+39. Painting the Array I (diff=1900)
+This is an insane problem, guess the result. https://codeforces.com/contest/1479/problem/B1
+
+
+40. Shovels Shop (diff=2100, dp, greedy)
+It can be seen quite easily that only the first K items are useful and we can do a O(K^2) dp with this observation.
+https://codeforces.com/problemset/problem/1154/F
+
