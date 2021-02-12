@@ -196,3 +196,11 @@ This is an insane problem, guess the result. https://codeforces.com/contest/1479
 It can be seen quite easily that only the first K items are useful and we can do a O(K^2) dp with this observation.
 https://codeforces.com/problemset/problem/1154/F
 
+
+41. Super M (diff=2200, tree diameter)
+This problem uses the property of euler traversal of a tree. https://codeforces.com/contest/592/problem/D
+
+
+42. Two strings (diff=2100, greedy, binary search)
+Quite standard trick, I've seen this trick more than 5 times. https://codeforces.com/contest/762/problem/C
+
