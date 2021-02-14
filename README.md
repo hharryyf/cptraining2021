@@ -204,3 +204,12 @@ This problem uses the property of euler traversal of a tree. https://codeforces.
 42. Two strings (diff=2100, greedy, binary search)
 Quite standard trick, I've seen this trick more than 5 times. https://codeforces.com/contest/762/problem/C
 
+
+43. Multiples and Power Differences (diff=2200, Ad-hoc)
+The key of solving this problem is to realize two facts, the grid is bipartite and LCM(1, 2, 3...16) + 16^4 <= 1e6.
+https://codeforces.com/problemset/problem/1485/D
+
+
+44.  Ivan and Burgers (diff=2500, range tree, z2_basis)
+The only fuck about this problem is the time limit is so tight. https://codeforces.com/contest/1100/problem/F
+
