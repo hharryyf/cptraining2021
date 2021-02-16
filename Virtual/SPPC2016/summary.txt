@@ -1,0 +1,24 @@
+I did this contest in practice mode.
+
+A. Anticlockwise Motion
+[solved] This problem is quite simple.
+key idea: pattern finding, you can observe what happen if you walk 1 row down and 1 col left from value 1.
+
+B. Balloon Warehouse
+[solved] The problem is extremely interesting.
+key idea: we need to realize that the final pattern has a period and we only need to consider how the pattern
+looks for the first 0 (because it would repeat after the second 0). And we can have some sense of recursive going on.
+Hence, if we do a modified dfs and only store the first 1 million visited points we are done.
+
+E. Election Frenzy
+[solved] This is a standard trick on graph.
+key idea: use range tree graph construction trick to build any spanning forest of the origional graph.
+
+I. Intuidiff II
+[solved] This problem is not hard at all, just hard to understand what it is trying to say.
+key idea: basically, the problem is just asking the maximum weighted subset of non-intersecting segments. This can be solved easily
+with a range tree optimization dp.
+
+K. Kiwis vs Kangaroos
+[solved] This is a very simple problem.
+key idea: just implement the scoring rule and you can solve it.
