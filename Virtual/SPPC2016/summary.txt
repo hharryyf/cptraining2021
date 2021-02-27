@@ -15,6 +15,10 @@ C. Crazy Rotations
 key idea: put a 1 in position of the processed letter and 0 in other spot, make 1 polynomial with length 2N-1 and other
 with length N, then reverse the one with length N and multiply the 2 polynimials.
 
+D. Dendroctonus
+[solved] This problem is quite simple, we need some guessing and proving though.
+key idea: the center must be one of the following: center of any triangle or center of any segment.
+
 E. Election Frenzy
 [solved] This is a standard trick on graph.
 key idea: use range tree graph construction trick to build any spanning forest of the origional graph.
