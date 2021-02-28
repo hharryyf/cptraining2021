@@ -23,10 +23,21 @@ E. Election Frenzy
 [solved] This is a standard trick on graph.
 key idea: use range tree graph construction trick to build any spanning forest of the origional graph.
 
+F. False Intelligence
+[solved] This is a very standard problem for someone working on logic.
+key idea: put the 2 identity elements into the set and generate the remaining set using the 4 rules.
+
 I. Intuidiff II
 [solved] This problem is not hard at all, just hard to understand what it is trying to say.
 key idea: basically, the problem is just asking the maximum weighted subset of non-intersecting segments. This can be solved easily
 with a range tree optimization dp.
+
+J. Just Terraffic!
+[solved] This problem is not hard if you realize it is dp. But since greedy is impossible (too many cases), and N is up to 3e5 what's
+the other option?
+key idea: define dp1[i][j] as the minimum number of type 1 car up to the first i observation and you have j "not closed observations",
+dp2[i][j] as same state but "maximum number". Then just transite and check if dp1[N][0] == dp2[N][0].
+
 
 K. Kiwis vs Kangaroos
 [solved] This is a very simple problem.
