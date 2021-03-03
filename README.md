@@ -216,3 +216,16 @@ The only fuck about this problem is the time limit is so tight. https://codeforc
 45 - 54. SPPC 2016 except H
 https://codeforces.com/gym/101177/attachments
 
+
+55. Containment (min-cut, enclosure graph model)
+https://codeforces.com/gym/100827
+
+56. Function (implementation)
+https://codeforces.com/gym/100827
+
+57. Pushups (simple dp)
+https://codeforces.com/gym/100827
+
+58. Salary Inequity (range tree)
+https://codeforces.com/gym/100827
+
