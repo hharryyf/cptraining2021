@@ -27,6 +27,19 @@ F. False Intelligence
 [solved] This is a very standard problem for someone working on logic.
 key idea: put the 2 identity elements into the set and generate the remaining set using the 4 rules.
 
+G. Graphics Design
+[don't want to solve right now] This problem is just about implementation. 
+key idea: we use 8 priority queues, each for 1 bitmask. 
+The entire schedule will be partitioned into 4 phases. 
+1) remove all the finished projects and increment the counter for a, b and c
+2) insert the nextsubprojects into the corresponding priority queues
+3) select the highest priority project from the 8 queues and put it into the "do" set
+4) repeat 3) until no valid project exist
+5) repeat 1) - 4) until all projects are done
+
+H. Hilbert’s Hash Browns
+[no idea]
+
 I. Intuidiff II
 [solved] This problem is not hard at all, just hard to understand what it is trying to say.
 key idea: basically, the problem is just asking the maximum weighted subset of non-intersecting segments. This can be solved easily

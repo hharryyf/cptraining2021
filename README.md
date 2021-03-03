@@ -213,3 +213,6 @@ https://codeforces.com/problemset/problem/1485/D
 44.  Ivan and Burgers (diff=2500, range tree, z2_basis)
 The only fuck about this problem is the time limit is so tight. https://codeforces.com/contest/1100/problem/F
 
+45 - 54. SPPC 2016 except H
+https://codeforces.com/gym/101177/attachments
+
