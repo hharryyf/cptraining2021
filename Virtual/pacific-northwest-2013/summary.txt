@@ -1,0 +1,8 @@
+I solved these problems in practice mode.
+
+A. Assignments
+[solved] this is a stupid problem, make sure no one gets 0 for the contest.
+
+B. Bones’s Battery
+[solved] The idea of this problem is you use floyd and binary search on final answer. Quite standard trick.
+
