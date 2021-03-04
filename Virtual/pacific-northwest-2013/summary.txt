@@ -6,3 +6,21 @@ A. Assignments
 B. Bones’s Battery
 [solved] The idea of this problem is you use floyd and binary search on final answer. Quite standard trick.
 
+
+E. Enterprising Escape
+[solved] Just a simple dijkstra shortest path.
+
+F. Federation Favorites
+[solved] Another stupid problem. Just run a simple sieve and done.
+
+G. Generations of Tribbles
+[solved] Another stupid problem. Too simple to be a regional contest problem.
+
+L. Languages
+[solved] Just make sure you read the problem statement clearly, then apply string parsing template and done.
+
+M. Mass Production
+[solved] The idea is we can think the procedure as the target items transform back to the base type and then transform
+to class B items. And to model this procedure, what's better than MCMF? I'm actually quite confused on why so little
+people solve this problem in contest?
+
