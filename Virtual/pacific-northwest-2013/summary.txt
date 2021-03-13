@@ -1,4 +1,5 @@
 I solved these problems in practice mode.
+https://codeforces.com/gym/101655/attachments/download/6474/20132014-acmicpc-pacific-northwest-regional-contest-en.pdf
 
 A. Assignments
 [solved] this is a stupid problem, make sure no one gets 0 for the contest.
@@ -7,8 +8,8 @@ B. Bones’s Battery
 [solved] The idea of this problem is you use floyd and binary search on final answer. Quite standard trick.
 
 C. Crusher’s Code
-[solved] Just define the "state" as a string of length 8 and we are done. The remaining would be a simple
-expected value dp.
+[solved] Just define the "state" as a string with '0' - '7' and we are done. 
+The remaining would be a simple expected value dp.
 
 E. Enterprising Escape
 [solved] Just a simple dijkstra shortest path.
@@ -18,6 +19,11 @@ F. Federation Favorites
 
 G. Generations of Tribbles
 [solved] Another stupid problem. Too simple to be a regional contest problem.
+
+I. Interstellar Trade
+[coached by Dallas] I am very bad at solving math construction problems, and I met one :(. Let mid be (min(x) + max(x))/2
+we claim that the wormhole is placed like this [L     h1     x1  mid         x2  h2  R].
+
 
 L. Languages
 [solved] Just make sure you read the problem statement clearly, then apply string parsing template and done.
