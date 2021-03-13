@@ -6,6 +6,9 @@ A. Assignments
 B. Bones’s Battery
 [solved] The idea of this problem is you use floyd and binary search on final answer. Quite standard trick.
 
+C. Crusher’s Code
+[solved] Just define the "state" as a string of length 8 and we are done. The remaining would be a simple
+expected value dp.
 
 E. Enterprising Escape
 [solved] Just a simple dijkstra shortest path.
