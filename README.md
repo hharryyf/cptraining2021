@@ -229,3 +229,6 @@ https://codeforces.com/gym/100827
 58. Salary Inequity (range tree)
 https://codeforces.com/gym/100827
 
+59 - 66 pacific-north-west-div1-2015 (ACDEGHJK)
+https://codeforces.com/gym/100820/attachments
+
