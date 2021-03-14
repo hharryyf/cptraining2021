@@ -1,0 +1,14 @@
+Contest link: https://codeforces.com/gym/101482
+
+
+F. Finding Lines
+[solved] When I saw p is more than 1/5, I think we might use randomized algorithm
+to solve it, and it works.
+
+
+J. Judging Troubles	
+[solved] The answer is simply sum(min(occ_1[str], occ_2[str])) for all unique strings in group 1.
+
+
+
+
