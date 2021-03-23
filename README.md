@@ -232,3 +232,7 @@ https://codeforces.com/gym/100827
 59 - 66 pacific-north-west-div1-2015 (ACDEGHJK)
 https://codeforces.com/gym/100820/attachments
 
+67 - 76 pacific-north-west-div1-2014 (ACDEFGHIKL)
+https://codeforces.com/gym/100827/problem/G
+
+(TODO: pacific-northwest-2013 H, asia-seoul-2020 K, nwerc-2014)

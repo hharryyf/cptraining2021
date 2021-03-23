@@ -11,6 +11,10 @@ C. Crusher’s Code
 [solved] Just define the "state" as a string with '0' - '7' and we are done. 
 The remaining would be a simple expected value dp.
 
+D. Delta Quadrant
+[solved] Note that the total cost when K = 0 is 2 times the sum of all weights. Then the problem can be calculated
+by a knapsack dp on tree. 
+
 E. Enterprising Escape
 [solved] Just a simple dijkstra shortest path.
 
@@ -24,6 +28,9 @@ I. Interstellar Trade
 [coached by Dallas] I am very bad at solving math construction problems, and I met one :(. Let mid be (min(x) + max(x))/2
 we claim that the wormhole is placed like this [L     h1     x1  mid         x2  h2  R].
 
+K. Klingons
+[solved] This problem is the well-known tree isomorphism which can be done by dfs and encode the tree as '(node(subtree))'.
+Then use double-hashing to do the pattern matching. 
 
 L. Languages
 [solved] Just make sure you read the problem statement clearly, then apply string parsing template and done.
