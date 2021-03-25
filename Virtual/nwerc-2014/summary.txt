@@ -1,10 +1,16 @@
 Contest link: https://codeforces.com/gym/101482
 
+C. Cent Savings
+[solved] this is a stupid dp problem. Time complexity O(DN^2)
+
 
 F. Finding Lines
 [solved] When I saw p is more than 1/5, I think we might use randomized algorithm
 to solve it, and it works.
 
+
+H. Hyacinth
+[solved] Note that as long as we start from a degree 1 node and color from up to down, we are done.
 
 J. Judging Troubles	
 [solved] The answer is simply sum(min(occ_1[str], occ_2[str])) for all unique strings in group 1.
