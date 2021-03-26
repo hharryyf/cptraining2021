@@ -24,6 +24,11 @@ F. Federation Favorites
 G. Generations of Tribbles
 [solved] Another stupid problem. Too simple to be a regional contest problem.
 
+H. Holodeck Hacking
+[coached by Ali] The idea is we can use bitmask on carries. If we define the bitmask of carry for the first (len+1)/2 bits here
+len = strlen(llatoi(num)) - 1 or strlen(llatoi(num)), then we can determine all the position sum (i.e. num[i] + rev[len-i-1]).
+ 
+
 I. Interstellar Trade
 [coached by Dallas] I am very bad at solving math construction problems, and I met one :(. Let mid be (min(x) + max(x))/2
 we claim that the wormhole is placed like this [L     h1     x1  mid         x2  h2  R].
