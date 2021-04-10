@@ -1,30 +1,40 @@
 Contest link: https://codeforces.com/gym/101482
 
-C. Cent Savings
+C. Cent Savings (simple dp)
 [solved] this is a stupid dp problem. Time complexity O(DN^2)
 
-E. Euclidean TSP
+
+D. Digi Comp II (graph, top-sort)
+[unsolved, learned] Initially, I observer that we can calculate the number of times any vertex v is passed during the N runs.
+This can be done however by the following observation: since the graph is a dag, we can solve the problem in topsort 
+order. for all vertices ceil(count(v) / 2) balls go to the first direction, the remaining go to the other direction.
+With this critical observation, this problem is done.
+
+E. Euclidean TSP (ternary search)
 [solved] if we plot the function on geobra, we can observe the function has a single peek/cave, hence
 we can use ternary search to solve it.
 
-F. Finding Lines
+F. Finding Lines (randimize algorithm)
 [solved] When I saw p is more than 1/5, I think we might use randomized algorithm
-to solve it, and it works.
+to solve it, and it works. Note that srand(time(NULL)) and rand() is not a good choice for randomized algorithm, use
+rng instead.
 
 
-H. Hyacinth
+H. Hyacinth (constructive algorithm)
 [solved] Note that as long as we start from a degree 1 node and color from up to down, we are done.
 
-I. Indoorienteering
+I. Indoorienteering (meet in the middle)
 [solved] This is the typical case of using meet-in-the-middle. Since 14! is too large but 7! is just ok
 we can try meet in the middle trick. we partition the path into 2 groups, (N + 1) / 2 length and N - (N + 1) / 2
 length. Note that we must to this for all c(N, (N + 1) / 2) choice of the first group. After that, we manipulate
 all permutations of the first group with 1 as the starting node and also the permutation of the second group.
 We'll need to check if the first group can link-up with the second group. 
 
-J. Judging Troubles	
+J. Judging Troubles	(simple)
 [solved] The answer is simply sum(min(occ_1[str], occ_2[str])) for all unique strings in group 1.
 
-
+K. Knapsack Collection (implementation)
+[solved] Note that only the N critical points are interesting. We can solve the required time for these N times seperately
+and the time in between forms an arithmetic progression. Nothing fancy about this problem just implementation.
 
 
