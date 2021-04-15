@@ -236,6 +236,17 @@ https://codeforces.com/gym/100820/attachments
 https://codeforces.com/gym/100827/problem/G
 
 
-77 - 88 pacific-north-west-div1-2014 (ABCDEFGHIKLM)
+77 - 88 pacific-north-west-div1-2013 (ABCDEFGHIKLM)
+https://codeforces.com/gym/101655/attachments/download/6474/20132014-acmicpc-pacific-northwest-regional-contest-en.pdf
 
-(TODO: asia-seoul-2020 K, nwerc-2014)
+
+89 - 94 asia-seoul-2020 (BEFHIL)
+This contest is extremely technical, F is dominate tree, I is divc optimization.
+https://codeforces.com/gym/102920
+
+95. Travelling Salesman Problem (diff=2200, ad-hoc, greedy)
+The simple observation is the cost is at least the sum of c[i]. Then, we should realize the cost from the smallest
+a[i] to largest a[i] is something we must consider because the rest would be free. 
+https://codeforces.com/contest/1503/problem/C
+
+(TODO: nwerc-2014)
