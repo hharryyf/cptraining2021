@@ -1,0 +1,10 @@
+
+I solved these problems in practice mode, contest link https://codeforces.com/gym/101398/.
+
+E. Edge Case (pattern finding)
+If we realize C5 = 11, we might guess Cn = Cn-1 + Cn-2, and we can write a python script to see if C100 is correct,
+and it is. Hence, we solve the problem.
+
+
+J. Joint Venture (simulation)
+Just be careful about the last statement, when there are multiple solutions, abs(l2-l1) maximum is returned.
