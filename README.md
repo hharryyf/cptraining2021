@@ -249,4 +249,7 @@ The simple observation is the cost is at least the sum of c[i]. Then, we should 
 a[i] to largest a[i] is something we must consider because the rest would be free. 
 https://codeforces.com/contest/1503/problem/C
 
-(TODO: nwerc-2014)
+96 - 104 nwerc-2014 (C-K)
+https://codeforces.com/gym/101482
+
+

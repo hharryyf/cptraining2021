@@ -1,5 +1,8 @@
 Contest link: https://codeforces.com/gym/101482
 
+
+A and B are too hard, skip for now
+
 C. Cent Savings (simple dp)
 [solved] this is a stupid dp problem. Time complexity O(DN^2)
 
@@ -19,6 +22,9 @@ F. Finding Lines (randimize algorithm)
 to solve it, and it works. Note that srand(time(NULL)) and rand() is not a good choice for randomized algorithm, use
 rng instead.
 
+G. Gathering (ternary search, binary search)
+[solved] Note that when x is fixed, the cost function is concave, when y is fixed, the cost function is concave as well,
+hence we can do a nested ternary search and get the answer.
 
 H. Hyacinth (constructive algorithm)
 [solved] Note that as long as we start from a degree 1 node and color from up to down, we are done.
