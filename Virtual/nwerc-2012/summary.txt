@@ -1,10 +1,29 @@
 
 I solved these problems in practice mode, contest link https://codeforces.com/gym/101398/.
 
+
+A. Admiral (MCMF)
+[solved] Template MCMF problem, split each point into v_in and v_out.
+
+B. Beer Pressure (expected value dp)
+[solved] This is very simple... Just dp and memorization.
+
+D. Digital Clock (simulation, implementation)
+[solved] Just solve it by brute force (i.e. check all 1440 minutes in one day) and simulate the process.
+
 E. Edge Case (pattern finding)
-If we realize C5 = 11, we might guess Cn = Cn-1 + Cn-2, and we can write a python script to see if C100 is correct,
+[solved] If we realize C5 = 11, we might guess Cn = Cn-1 + Cn-2, and we can write a python script to see if C100 is correct,
 and it is. Hence, we solve the problem.
 
 
+I. Idol (2-SAT)
+[solved] This problem can be easily reduced to a 2-CNF formula, to make sure 1 must be a solution, we can add an additional clause (1 V 1) to the system.
+
+
 J. Joint Venture (simulation)
-Just be careful about the last statement, when there are multiple solutions, abs(l2-l1) maximum is returned.
+[solved] Just be careful about the last statement, when there are multiple solutions, abs(l2-l1) maximum is returned.
+
+K. Key Insight (ad-hoc)
+[coached by teammates again...] There are 2 important properties: 1) only the intersection of valid swaps are important 2) if we draw these permutations
+out, we would get a bipartite graph, and the bipartite graph is complete, this complete is extremely important, otherwise, no polynomial solution exist.
+Then, we solved the problem. 
