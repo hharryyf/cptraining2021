@@ -252,4 +252,6 @@ https://codeforces.com/contest/1503/problem/C
 96 - 104 nwerc-2014 (C-K)
 https://codeforces.com/gym/101482
 
+105 -112 nwerc-2012 (ABDEFIJK)
+https://codeforces.com/gym/101398
 
