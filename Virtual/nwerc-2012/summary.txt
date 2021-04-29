@@ -2,6 +2,9 @@
 I solved these problems in practice mode, contest link https://codeforces.com/gym/101398/.
 
 
+C, G, H are like short assignments.... I would run away directly.
+
+
 A. Admiral (MCMF)
 [solved] Template MCMF problem, split each point into v_in and v_out.
 
@@ -15,6 +18,11 @@ E. Edge Case (pattern finding)
 [solved] If we realize C5 = 11, we might guess Cn = Cn-1 + Cn-2, and we can write a python script to see if C100 is correct,
 and it is. Hence, we solve the problem.
 
+F. Foul Play (greedy, constructive algorithm)
+[solved but wrong answer to infinity...] The idea is not hard, let the teams you can beat kill as many as those teams you cannot beat as possible, but the procedure
+of solving this problem is important. 1) for each unbeatable team j, find a team i that can beat it and a[1][i] = '1'. 2) find a team that 1 can beat,
+3) for each unbeatable team j, find a team that can beat it 4) for teams that are still alive but has not been matched, arrange in pairs.
+Note that step 3 is the one that might be ignored... And step 3) cannot be merged to step 2.
 
 I. Idol (2-SAT)
 [solved] This problem can be easily reduced to a 2-CNF formula, to make sure 1 must be a solution, we can add an additional clause (1 V 1) to the system.
