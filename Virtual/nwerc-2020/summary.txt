@@ -1,0 +1,40 @@
+Practice contest with teammates, contest link https://codeforces.com/gym/103049
+We solved 8/11 in contest, the main mistake was problem A. We destroyed the input variable.
+
+A. Atomic Energy
+[solved] The observation is we calculate the dp table up to 1e6 and use 1 type of item to reduce k to less than 1e6, preprocessing O(N^4), query time O(qN). 
+
+C. Contest Struggles
+[solved] Very simple problem, make sure no one gets 0.
+
+D. Dragon Balls
+[solved] The idea is the number of ways to make a^2 + b^2 = c which a, b and c are integers should be limited. Just try all such alternatives.
+
+E. Endgame
+[solved] Alice win is easy to check, how to check the tie? To check the tie, when n <= 500, we just check by brute force, otherwise, we check by randomly select 2000 positions,
+and there should be 1 tie position.
+
+F. Flight Collision
+[solved] Observation is if t[i] and t[i+2] want to hit, t[i] and t[i+1] or t[i+1] and t[i+2] must hit. Thus, we only need to maintain the time to clash
+between adjacent flights, and always pop the minimum and merge the adjacent flights together. If I'm doing the implementation, I would use a set and a linked-list.
+But my teammate used set + ordered statistic which I think it's unecessary. 
+
+G. Great Expectations
+[unsolved] This is a very strange binary search problem. We define dp[i][j] as the minimum expected time to finish i-n tasks with j errors. We want to solve dp[0][0].
+The transition formula is stright forward. But for the fail case there's a term dp[i][j] = p[i] * (t[i+1] - t[i] + dp[i+1][j]) + (1 - p[i]) * min(t[i+1] - t[i] + d[i] + dp[i+1][j+d[i]], dp[0][0]).
+At the equilibrium point, dp[0][0] should be equal to the dp[0][0] we guess.  
+
+H. Hot Springs
+[solved] This is a very simple construction problem, sort the array and put the largest - smallest - second largest - second smallest from back to front.
+
+I. Island Tour
+[solved] implemented by Dallas, very strong implementation problem. 
+
+
+J. Joint Excavation
+[unsolved] This problem is very difficult to come up with the correct algorithm. We put all vertices into set A and do dfs from one vertices. When we meet a vertex,
+we put it into the path and erase from A. When we backtrack, we remove the vertex from path and put it to B. This is absolutely correct because, it can make sure
+|A| - |B| decreases by 1 after each recursive call. And because of the property of dfs, it makes sure |A| and |B| form 2 connected components.   
+
+K. Keyboardd
+[solved] Very simple problem, make sure no one gets 0. This is just group all the same character together, and compare two compressed array.

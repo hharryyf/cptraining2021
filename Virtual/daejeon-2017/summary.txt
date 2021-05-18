@@ -1,0 +1,61 @@
+This contest is not too hard but extremely annoying, similar to the Asia seoul regional contest, this one also has
+a lot of implementation problems, and there are some very annoying edge cases. 
+https://codeforces.com/gym/101667/attachments
+
+
+
+B. Connect3 (backtracking, implementation)
+[solved] Just be careful about the row/column definition of this question. The remaining thing is to implement a brute force,
+backtracking connect3 playing procedure. Even if there's only a little pruning conditions, the algorithm can still run in time.
+
+C. Game Map (dp, LIS)
+[solved] This problem is very simple, just do dp in order of degree of vertices in ascending order.
+
+D. Happy Number (implementation)
+[solved] This problem is very simple, just use brute force, because the number of state is at most ~800.
+
+E. How Many to Be Happy? (min-cut)
+[unsolved, learned] I messed up this problem. A thing to note is when greedy wrong answers to infinity, and the input size is small, flow might 
+be a good choice. This problem uses the definition of flow algorithm, we want to cut as little edges with weight less than e(S, T) as possible to disconnect S and T,
+just run standard min-cut algorithm would solve the problem.
+
+F. Philosopher’s Walk (divide and conquer, implementation)
+[unsolved, learned] One thing to take away from this problem is if the implementation is getting too hard, try to come up with a smarter way.
+We should immediately realize the problem can be solved by divide and conquer, however, due to the rotation and reflection, the coordinate is very hard
+to keep track of. Initially, I though to case work to solve this issue, however, this requires ~60+ cases which doesn't make a lot of sense.
+We can use divide and conquer, and when we backtrack to a specific point, we do the coordinate transfer afterward. For example, if we label
+things as 
+1 2
+0 3
+Then, in the 0th quadrant, the track experiences a reflection according to y = x, hence, we just need to swap x, y coordinate.
+In the 1st quadrant, we can just add n/2 to the y coordinate, 2nd quadrant, we can just add n/2 to both x coordinate and y coordinate.
+The 4th quadrant is a bit difficult, it is a rotation according to (n+1,n/2+1), we can just x <- n + 1 - y, y <- n/2 + 1 - x 
+The reason of this way works because reflection, rotation and transition operations are commutitive. 
+
+G. Rectilinear Regions (line sweep)
+[solved] This problem is not hard but annoying. One case should be discussed seperately, it is the left most area (unbounded) must be excluded from consideration. 
+
+H. Rock Paper Scissors (FFT)
+[solved] This is a standard FFT problem, use FFT for pattern matching, be careful about the minimum degree term we want to consider. 
+
+I. Slot Machines (KMP)
+[solved] We need to apply the KMP algorithm backward, and use the standard trick to compute the period, we are done.
+
+J. Strongly Matchable (min-cut, hall's theorem)
+[unsolved] This is an extremely technical problem. If the answer is no, according to hall's theorem, 
+there must be some subset |U| <= n/2 in partition A such that, its neighbour N(U) has less than |U| many points 
+in partition B. Hence, in the worst case, we put n/2 - |U| of points of N(U) into partition A and the condition
+for no solution is |N(U)| - (n/2 - |U|) <= |U| which is |N(U)| < n/2.
+The problem is now equivalent to if there exist a vertex set |U| such that |N(U)| < n/2.
+Now consider the complement of |N(U)| union |U|, let's call it U', we know it cannot be empty. And it can be seen
+easily that |N(U)| is the vertex cut of the graph, i.e. when you remove all points from |N(U)| the graph is disconnected.
+After that, we should realize if we can find any of such set, the solution is no. Hence, we can just run min-cut for O(n^2) many
+times (different choice of s-t) and if there's a cut less than n / 2, the answer is no. 
+
+K. Untangling Chain (constructive algorithm)
+[solved] Just always walk one step further to the furthest point in this direction. 
+
+L. Vacation Plans (simple dp)
+[solved] This is a simple dp problem, the only observation we need is the maximum number of days we should consider is n^3.
+
+

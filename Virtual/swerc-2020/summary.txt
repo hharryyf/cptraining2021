@@ -1,0 +1,9 @@
+
+A. Gratitude (implementation)
+[solved] Just be careful about the sort condition (i.e. don't forget about the timestamp part of the problem).
+
+E. Cakes (simple math)
+[solved] This is very simple, just make sure no one gets 0 in the contest.
+
+
+

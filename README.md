@@ -255,3 +255,8 @@ https://codeforces.com/gym/101482
 105 -112 nwerc-2012 (ABDEFIJK)
 https://codeforces.com/gym/101398
 
+113 - 122 nwerc-2020 (ACDEFGHIJK)
+https://codeforces.com/gym/103049
+
+
+
