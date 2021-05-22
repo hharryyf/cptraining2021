@@ -2,6 +2,11 @@ This contest is not too hard but extremely annoying, similar to the Asia seoul r
 a lot of implementation problems, and there are some very annoying edge cases. 
 https://codeforces.com/gym/101667/attachments
 
+A. Broadcast Stations (dp)
+[unsolved] This problem is very very hard. The hardest part of this problem is the definition of state, I've never seen this kind of state before...
+Let's suppose f[v][i] as the minimum cost that could cover all vertices with distance less than or equal to I to 
+vertex v and all vertices in the subtree of v. g[v][i] as the minimum cost that could cover all vertices with distance greater than i in the subtree. 
+
 
 
 B. Connect3 (backtracking, implementation)

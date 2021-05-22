@@ -1,9 +1,42 @@
 
+
+B and M are too hard... I believe the 3 girls did something bad in the Anzac round practice contest.
+
 A. Gratitude (implementation)
 [solved] Just be careful about the sort condition (i.e. don't forget about the timestamp part of the problem).
 
+C. Safe Distance (binary search, union find, geometry)
+[solved] We can easily come up with the idea of binary search. Then, let's think how to validate a specific d.
+We apply union find in this case, and if there's a connected component that completely surround (0, 0) or (X, Y),
+or a completely go trough up to down or left to right, we return invalid, otherwise, valid.
+
+D. Jogging (dijkstra)
+[solved] A key observation is this problem equivalent to count how many roads that has at least 1 point (not end points) which has distance no more than U / 2.
+
 E. Cakes (simple math)
 [solved] This is very simple, just make sure no one gets 0 in the contest.
+
+F. Mentors (combinatorics)
+[unsolved]  
+
+G. Decoration (dfs, prime factorization, binary lifting)
+[solved] This problem is really nice. Firstly, need to be aware that each value 0 to N - 1 has only 1 child. Hence, the transition would form a functional graph.
+Then, we can use binary lifting to calculate the sum for each starting point. But the question is how to detect if there's any duplicate? We can use dfs and stack
+to solve this part. Something to keep in mind is, if we set next[0][0] = 0, we can simplify a lot of case work. Overall tedius, but not hard. 
+
+H. Figurines (persistent range tree, string parsing)
+[solved] The problem is quite stright forward, just use persistent range tree to maintain the all sets. Just be careful on how to parse the string, and be careful
+that each line can contain more than 2 operations!
+
+I. Emails (randomized algorithm, BFS)
+[solved] Note that the answer E + 1 is also considered as correct, we can do BFS with 200 random starting position and find the largest shortest distance
+from these starting position. Take the ceiling log and done.
+
+K. Unique Activities (suffix array, binary search)
+[solved] We can binary search for this length, and check if lcp(p[i], p[i+1]), lcp(p[i], p[i-1]) is greater or equal to length,
+if so, we add 1 to the list of elimination. If this count is equal to N - length + 1, then, we search to larger length, otherwise, smaller length.
+Quite standard trick, just be careful about the statement for tie-break.
+
 
 
 
