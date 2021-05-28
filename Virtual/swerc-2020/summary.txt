@@ -1,6 +1,6 @@
 
-
-B and M are too hard... I believe the 3 girls did something bad in the Anzac round practice contest.
+B and M are too hard... I believe the 3 girls did something bad in the Anzac round practice contest. 
+If they do something bad in the real regional, I'll report them and they'll be in trouble. 
 
 A. Gratitude (implementation)
 [solved] Just be careful about the sort condition (i.e. don't forget about the timestamp part of the problem).
@@ -16,8 +16,11 @@ D. Jogging (dijkstra)
 E. Cakes (simple math)
 [solved] This is very simple, just make sure no one gets 0 in the contest.
 
-F. Mentors (combinatorics)
-[unsolved]  
+F. Mentors (combinatorics, dp)
+[unsolved, interesting problem] This problem is hard but nice. We can calculate tree[i] as the number of trees with size of i, this is simple to be calculated, just manipulate
+the size of the left subtree and we are done. A case we need to take care is the symmetry. This can be done by let |left| <= |right| and when the equal sign 
+is reached, we use the following rule k*n = v (mod km) then n = v / k (mod m). After that, R is not necessarily a leaf, we can then subtract the number of invalid
+trees from the answer. This can be done by again manipulating the "invalid" subtree size.  
 
 G. Decoration (dfs, prime factorization, binary lifting)
 [solved] This problem is really nice. Firstly, need to be aware that each value 0 to N - 1 has only 1 child. Hence, the transition would form a functional graph.
@@ -37,6 +40,7 @@ K. Unique Activities (suffix array, binary search)
 if so, we add 1 to the list of elimination. If this count is equal to N - length + 1, then, we search to larger length, otherwise, smaller length.
 Quite standard trick, just be careful about the statement for tie-break.
 
-
+L. Restaurants (deffered acceptance algorithm)
+[solved] This problem is very standard, we can apply the deffered acceptance algorithm with quota and solve this directly. First time I realized COMP4418 is useful :).
 
 

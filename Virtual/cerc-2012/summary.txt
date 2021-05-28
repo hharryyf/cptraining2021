@@ -1,0 +1,16 @@
+
+A. Kingdoms (dfs, bit-mask)
+[solved] Need to be careful, the problem is asking "only". The overall idea is quite simple, do a dfs from a state with all nodes, for each unstable
+state just drop banks one by one recursively and keep searching until reach a stable state.
+
+C. Chemist’s vows (simple dp)
+[solved] This is another "login" problem. Just define state dp[i] as if it is possible to make a string up to the ith character "readable".
+And transition is only related to dp[i-1] and dp[i-2].
+
+D. Non-boring sequences (divide and conquer)
+[solved] This problem is very good. One idea is to do divide and conquer, find a number that only occurs once in the subarray. 
+But we might run into the case of O(N^2). This is not because of the pivot is bad,
+this is because find the pivot can be costly. How to find the pivot fast? We can iterate from two sides, the first good pivot is the partition point.
+
+H. Darts (simple math)
+[solved] This is a "login" problem. To avoid accuracy issue, use square instead of distance.
