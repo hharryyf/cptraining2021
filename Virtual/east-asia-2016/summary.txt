@@ -1,0 +1,52 @@
+This is an extremely difficult contest, we did 7/12 in contest, I did pretty bad in the contest
+only able to code problem F. I made a mistake, failed to solve G in contest which should be my field. 
+
+
+A. Number Theory Problem (simple math)
+[solved, coded by Ali] This problem is too simple, login type question.
+
+B. Hemi Palindrome (implementation, inclusion-exclusion)
+[solved after contest by Dallas] This is an extremely difficult problem. The idea is if we can put 0 and this would not make the remained Palindrome
+less than K, put 0, otherwise, put 1. But the implementation and case work is tooooooo hard.
+
+C. Mr. Panda and Strips	(line sweep)
+[solved, coded by Ali] This problem is very strange, we just implemented the brute force on the first segment and sweep to find the second until invalid solution.
+This suppose to work in O(N^3), but it passed :).
+
+D. Ice Cream Tower (binary search on final answer)
+[solved, coded by Ali] We can sort the array. And after that, the pattern should look like [select level 0] | [select level 1] | [select level 2]...
+Then, with this property, we can binary search on the length and use greedy to validate.
+
+E. Bet (greedy)
+[solved, coded by Dallas] This problem is simple. Just get the most profiting first. But there's an accuracy issue, use BigDecimal for java.
+Magically long double for C++ works :).
+
+
+F. Mr. Panda and Fantastic Beasts (suffix array, hashing, binary search on final answer)
+[solved, coded by me] We can binary search the final length and use hashing to get the possible start index. To break the tie,
+we can use suffix array to sort the suffix and print the smallest valid one of the derived length.
+
+
+G. Pandaria (kruskal modification, small to large, binary-lifting)
+[solved after contest] Just apply the werewolf trick or the trick used by codeforces 1253 F to this.
+Run kruskal MST algorithm to reconstruct the graph, the obtained tree is like a binary heap. 
+The tree has the property that the weight at lca(u, v) is the minimum maximum weight to walk from u to v in the graph.
+After this tree is constructed, we can dfs on this tree to construct the LCA 
+And for each query, we just need to jump to the hightest point such that it has weight less than or equal to w.
+Then query the most frequent number of that node. The way to obtain the most frequent number is to use a dfs on the reconstructed tree, 
+and use the small to large trick to obtain the answer for each of the tree node. One trap was this problem forced online, I wasted 20 minutes
+to code an offline solution :(.
+
+H. Great Cells (combinatorics)
+[solved, coded by Ali] The way Ali approached this problem is to calculate what's the contribution for each cell of each value to the answer. 
+This makes the problem extremely simple. I don't know why I cannot solve it like this :(.
+
+J. Mr.Panda and TubeMaster (MCMF)
+[unsolved] This problem is very hard. The idea is we bipartite the graph, for each cell (x, y), if x + y is odd we call this cell a white cell;
+otherwise, it is black. For a white cell, we consider its horizontal segments as incoming and vertical segments as outgoing. For black cells,
+we consider the vertical segments as incoming and horizontal segments as outgoing. We split cells into 2 parts and add edges in the flow diagram
+between adjacent cell's outgoing part to incoming part. To decide incoming and outgoing, we use the previous definition. For unforced cells we
+add an edge between its in and out. 
+
+L. World Cup (brute force)
+[solved, coded by Dallas] This is another login type question, just brute force all games and check up.

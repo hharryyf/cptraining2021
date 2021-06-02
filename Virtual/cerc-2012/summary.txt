@@ -12,5 +12,21 @@ D. Non-boring sequences (divide and conquer)
 But we might run into the case of O(N^2). This is not because of the pivot is bad,
 this is because find the pivot can be costly. How to find the pivot fast? We can iterate from two sides, the first good pivot is the partition point.
 
+
+G. Jewel heist (line sweep, fenwick tree)
+[solved] Key observation, in the end there must be a color that's not occur in our query range. Hence, we just need to sweep all the way up in the y direction.
+We maintain a fenwick tree/range tree on the x-direction on the count of balls. The as we sweep, we always query the gap of the same color at the moment this gap
+is modified. Don't forget about a final loop after the sweep on the final gaps. 
+
 H. Darts (simple math)
 [solved] This is a "login" problem. To avoid accuracy issue, use square instead of distance.
+
+I.  The Dragon and the knights (geometry)
+[unsolved] This uses a property about region in geometry. If we calculate whether the relative position of a point and all lines (1 if up, 0 if down). If two points
+have the same relative position for all lines then they are in the same region, otherwise, they are not. With this property this problem can be easily solved
+by counting the number of distinct regions and the number of distinct regions that have points and see if they are equal.
+
+J. Conservation (top-sort, greedy)
+[solved] Not hard to show we should group "similar" type together. Hence, we use a deque if a deg 0 vertex has type 1, we push front, otherwise, we push back.
+Need to be careful, the start point for both cases need to be considered (i.e. consider both tp=1,2 as starting point).
+
