@@ -12,6 +12,8 @@ D. Non-boring sequences (divide and conquer)
 But we might run into the case of O(N^2). This is not because of the pivot is bad,
 this is because find the pivot can be costly. How to find the pivot fast? We can iterate from two sides, the first good pivot is the partition point.
 
+E. Word equations (simple dp, greedy)
+[solved] We define dp[i][j] as the matched character at node i and we have a starting match index of j.
 
 G. Jewel heist (line sweep, fenwick tree)
 [solved] Key observation, in the end there must be a color that's not occur in our query range. Hence, we just need to sweep all the way up in the y direction.

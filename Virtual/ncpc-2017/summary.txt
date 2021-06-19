@@ -1,0 +1,22 @@
+This is the divisional round of NWERC, but since this is in the European region, this might be interesting.
+
+
+B. Best Relay Team (simulation)
+[solved] A login problem, just enumerate the one that runs first.
+
+D. Distinctive Character (BFS)
+[solved] We can interpret the problem as the largest shortest path from multiple source. 
+
+E. Emptying the Baltic (best first search/dijkstra)
+[solved] This problem is very standard. The idea is for each point, consider the minimum height cell that can be propagate to that point, this 
+is similar to prim/dijkstra algorithm.
+
+G. Galactic Collegiate Programming Contest (dynamic range tree)
+[solved] This problem can be easily converted to a kth ordered statistic, but remember, build-in ordered statistic tree doesn't support
+multiset, we should use range tree for this. But since there are 2 criterias, we use dynamic range tree and let the point to be point * 1e9 + 5e8 - penalty.
+
+I. Import Spaghetti (floyd)
+[solved] This is a standard problem. We just use floyd algorithm to extract the minimum cycle in a directed graph.
+
+J. Judging Moose (simple)
+[solved] Login problem, I can solve it in 2010...

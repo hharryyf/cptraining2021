@@ -1,0 +1,59 @@
+We did this practice contest as a team, and solved 8 out of 11 problems in the end. This performance 
+can rank 4th place in the actual regional, which was our best performance in NWERC.
+https://codeforces.com/gym/101170
+
+A. Arranging Hat (dp)
+[solved, coded by Ali] This problem is very hard, but I'm quite amazed that Ali can solve it during the contest. The idea is to define 
+a dp state dp[l][r][position][digit] as the minimum cost to sort the interval [l, r] such that the first [0:pos-1] have been sorted and 
+at position, the digit is at least "digit". It's quite amazing that this state can consider all cases (it is a smarter brute force). 
+Let's consider how to do dp transition. Firstly, we can throw away digit "digit" and use the answer dp[l][r][position][digit + 1]. 
+Secondly, when we manipulate how many "digit" we use as for [l,i][position]. 
+dp[l][r][position][digit] = min(dp[l][i][position+1][0] + number of digit not equal to digit at position in range [l,i-1]).
+
+
+B. British Menu (strongly connected component, brute force)
+[solved, coded by Ali] This problem is quite standard, we know that the size of connected component cannot exceed 5. Hence, 
+we use any scc algorithm (I prefer tarjan, but it seems like Ali likes kosaraju) to compress the graph into a dag. For each compressed part,
+we should do a O(5!) brute force to calculate the maximum length that can be reached from i->j. And when we do dp on the dag, we define dp[i][v]
+as the maximum answer start from vertex v in the ith strongly connected component, and try to link up dp[i][v], v->u, dp[k][p] which there's an edge between u and p
+and k is the id of the connected component that is connected to i in the compressed graph. Nothing fancy, just implementation.
+
+C. Careful Ascent (simulation)
+[solved, coded by Dallas] A simple math/physics problem, one of the 3 login problems.
+
+
+D. Driving in Optimistan
+[unsolved] Seems like Dallas and Ali know how to solve this one, I'll run away then :).
+
+E. Exam Redistribution (simple construction)
+[solved, coded by me] This problem is a login problem. Break case is when the largest element is larger than the sum of the remaining element.
+
+F. Free Weights (binary search on final answer)
+[solved, coded by Ali] We can definitely do binary search on final answer, to validate mid, we just erase all weights less than or equal to mid
+and check if the final configuration is valid. Ali however, used a different approach, details in the code.
+
+
+G. Gotta Nudge 'Em All (simlulation)
+[solved after contest by me] This problem is very simple, but the problem statement is very ambiguous. The idea is we can process each family seperately,
+and for each family, we ignore the transfer cost, only do the transfer until the end of the evolution. Hence, this means the number of candies available is
+equal to 4 * caught - 1. Then, we maintain a data structure that can insert in new items, when the new item is too expensive, we can try to see if we can replace
+an already selected item which is even more expensive by the current one. 
+
+H. Hamiltonian Hypercube (simple math)
+[solved, coded by me] Another login problem.
+
+I. Iron and Coal (BFS)
+[solved, coded by Ali] This problem can be done by doing 3 BFS, one from source to other places, one from all type-1 nodes to other places on the reverse graph,
+the last one from all type-2 nodes to other places on the reverse graph.
+
+J. Jupiter Orbiter (max flow)
+[solved, coded by me] This is a standard flow problem, we splited each queue into N many copies, and connect the adjacent copies with c[i], each copy of the queue
+has a vertex capacity of c[i] as well, we connect the requirement every day to the super source and to the copy of the queues of that day, the queue of each day to 
+the downlinks and the downlinks to the super sink. If the problem has a solution, the graph must be in full capacity.
+
+K. Kiwi Trees (geometry)
+[solved after contest by Dallas] The idea is not hard, we calculate a "inner polygon", which edges are formed by all edges of the origional polygon pushed 4 meters
+into the centre of the polygon. Then, for each vertices of the new polygon, we check if it is inside the origional polygon, if so, we put it into our candidate list.
+Then, we manipulate all pairs of points in our candidate list, if any has a distance of 8 meters, we are done. Otherwise, no solution.
+
+

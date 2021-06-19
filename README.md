@@ -267,3 +267,6 @@ https://codeforces.com/gym/103081/problem/F
 145 - 154 CHINA-FINAL/EAST-ASIA-2016 (without I, K)
 https://codeforces.com/gym/101194/attachments
 
+155 - 164 NWERC-2016 (Without D)
+https://codeforces.com/gym/101170
+
