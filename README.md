@@ -270,3 +270,5 @@ https://codeforces.com/gym/101194/attachments
 155 - 164 NWERC-2016 (Without D)
 https://codeforces.com/gym/101170
 
+165 - 172 CERC-2012 (ACDEGHIJ)
+https://codeforces.com/gym/100624/attachments
