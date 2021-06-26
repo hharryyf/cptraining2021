@@ -1,0 +1,59 @@
+2017 south pacific regional contest, try to see my gap with the strongest south pacific team in history.
+https://prog4fun.csse.canterbury.ac.nz/mod/quiz/attempt.php?attempt=1661&cmid=17&page=1&scrollpos=628#question-2848-2
+
+A. Andrew’s Amazing Architecture (simple greedy)
+[solved] It is very easy to see we can construct the things greedily twice from front to end and from end to front, and then try
+to concatenate the two.
+
+B. Banner (impossible)
+[impossible] Since Ray said it's very very hard, we'll skip it.
+
+
+C. Catan’s Longest Road (backtracking, implementation)
+[solved] Nothing fancy, because the branching factor is very small, we just use backtracking and pruning on the constructed graph
+for each road type.
+
+D. Drawn and Quartered (simulation)
+[solved] This is the login problem...
+
+E. Extending Rock-Paper-Scissors (constructive algorithm, greedy)
+[solved] This is just construct a zero-sum game. This is simple because as long as we use the property a[i][j] != a[j][i] and a[i][i] = 0, we can
+just construct greedily. As long as the row sum is N / 2, we are done. 
+
+F. Fair Share (geometry, line sweep)
+[solved] This problem is very similar to a SWERC 2018 problem. We can sort the points first and merge the points with the same polar angle. 
+After that for each point, we use two pointer to maintain a window of points that has a polar angle difference less than pi. Nothing fancy,
+just be careful about accuracy. 
+
+G. Grievous Loss of Data (observation, binary search on final answer)
+[unsolved] This problem is extremely difficult, if the elder's team cannot solve it in contest, it will be pointless for me. The idea is consider
+the point with the leftmost right end point, it must form a clique with its neighbour. Hence we can solve this problem using binary search on the
+final answer. For each point that has not been removed but has degree less than mid, we push it into the queue, remove it, and decrement the degree
+of its neighbour, if the neighbour can be removed, we push the neighbour into the queue. When the above process has terminated, we check if all 
+points have been removed, if so, the validation is fine, otherwise, it is not.
+
+H. Hiding Merlin (simple dp)
+[solved] This problem is simple, the transition is only related to the last 10 digits.
+
+I. Injecting DNA (suffix array, inversion pair)
+[solved] This problem is very simple, we use suffix array to get the rank of the each suffix, then the problem is simply asking
+what's the total number of "ordered pair" (non-inversion) for this rank array. Use the fenwick tree, done.
+
+J. Judge’s Mistake (constructive algorithm, greedy)
+[solved] Firstly erase 1 occurence of all numbers from 1 to C, then erase the n - 2 largest numbers between 1 to C. 
+Then, erase 2R - 2C + 2 numbers between 1 and C. Finally, the lowest C - 1 numbers are edge weights. 
+
+K. Kiwis vs Kangaroos II (constructive algorithm)
+[solved] Firstly, we can see that the 2 types are independent, hence this is just a construction problem. We follow the path
+1->n->(n-1)->(n-2)...->2, and fill the matrix from larger requirement to lower requirement.  
+
+L. Last Casino (Fermat's last theorem, probability)
+[solved] Assume there are B balls, r red bins, w white bins and b black bins, then we have the equation n = w + b + r
+then P(Alice) = (r/n)^B, P(Britney) = 1 - ((w + r)/n)^B - ((b + r)/n)^B + (r/n)^B, then the probability difference = 1 - ((w + r)/n)^B - ((b + r)/n)^B
+which is 1 - ((n - b)/n)^B - ((n - w)/n)^B. We want to minimize this expression, this can be done
+by setting B = 2, n^2 = (n-b)^2 + (n-w)^2, iterate b from 0 to n and find a solution
+after it is minimized, we should also minimize 
+the probability of the P(C) = ((n - b)/n)^B + ((n - w)/n)^B - 2 * (r/n)^B
+which we should minimize (n - b)^2 + (n - w)^2 - 2 * r^2 = n^2 - 2 * r ^2
+hence we should maximize r, which means minimize the sum w + b.
+The reason for us to set B = 2 is because of Fermat's last theorem. 
