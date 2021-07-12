@@ -1,0 +1,39 @@
+We did this contest in team of 3, solved 9 problems during contest and 1 afterward.
+This was by far our best performance.
+https://codeforces.com/gym/101987/
+
+A. Circuits (line sweep, range tree)
+[coded by Ali] This problem is quite standard, each rectangle can be viewed as a segment parrallel to the y-axis.
+The only regret thing was this problem was not in charged by me :).
+
+B. Cosmetic Survey (floyd, simulation)
+[coded by Ali] This problem is standard, the data range is a big hint that we should use floyd. 
+
+C. Disks Arrangement (greedy, simple geometry)
+[coded by Ali] Both me and Ali realized that there might be a solution that put the largest one in the middle, smallest, second smallest
+on the left, right. We always select the circle from front or back which produce the shortest resulting circles. Don't know how to prove it, 
+but it works.
+
+D. Go Latin (simulation)
+[coded by Dallas] Login problem.
+
+E. LED (binary search on final answer, line sweep)
+[coded by me] We can interpret the problem as use 3 rectangle of height 2 * H to cover all the points. Not hard to use sweeping to validate this H.
+But the tricky case is when x = 0, F is strictly 0!!!! 
+
+F. Parentheses (implementation)
+[coded by Dallas] Whenever a problem requires implementation, hand it to Dallas is always a good choice :).
+
+G. Secret Code (math, integration, probability)
+[coded after contest] This problem is quite hard, especially for someone that has not learned multivariable calculus. The idea is not to write 
+and integral based on starting point of B and C, we can write an integral based on the intersection length.
+
+J. Starwars (multi-source BFS)
+[coded by Ali] I learned a new trick from this problem. The idea is we can use BFS from the two source clusters. And then use the level order traversal of BFS
+to figure out pairs of nodes that contains a valid path from the source. 
+
+K. TV Show Game (2-SAT)
+[coded by me] We can easily come up with a set of equations for each constraint. (A or B) and (B or C) and (A or C). The the remaining is 2-SAT.
+
+L. Working Plan (greedy)
+[coded by Dallas] The only take away is don't use python in contest unless the input is very small.

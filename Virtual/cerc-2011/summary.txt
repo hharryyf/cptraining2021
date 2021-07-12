@@ -1,0 +1,12 @@
+Contest link: https://codeforces.com/gym/101481/
+
+
+D. The Grille (simulation)
+[solved] This is another login problem, just simulate.
+
+I. Unique Encryption Keys (line sweep, range tree)
+[solved] This is a standard problem, just sort the queries according to right end point, maintain a range min tree on next occurence place
+of each number, do a sweep, done. 
+
+J. Vigenere Cipher Encryption (simulation)
+[solved] This is the login problem of the contest, just simulate.

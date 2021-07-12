@@ -276,3 +276,9 @@ https://codeforces.com/gym/100624/attachments
 173 - 183 SPPC-2017 (ACDEFGHIJKL)
 The problem link is at prog4fun.
 
+184. Interstellar Travel (line sweep)
+The idea of this problem is very simple, but the implementation is annoying. For each star, the contribution is like a line wave.
+We can use line sweep to sum of the contribution, and query at the turning points. https://codeforces.com/gym/102423/
+
+185 - 194 Asia-Seoul-2018 (no H and I)
+https://codeforces.com/gym/101987/
